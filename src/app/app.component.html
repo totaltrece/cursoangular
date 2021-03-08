@@ -1,0 +1,48 @@
+
+
+    <app-header></app-header>
+   
+    ..
+<mat-slider></mat-slider>
+..
+
+<app-renderer></app-renderer>
+
+    <h1>{{ title }} app is running!</h1>
+   
+    uh
+    <router-outlet></router-outlet>
+  ah
+<!--
+
+    <p> con tres random:</p>
+    <app-colours></app-colours>
+
+
+    <p>un random suelto:</p>
+
+    <app-random></app-random> -->
+
+    Ejemplo de switch
+
+    <ul [ngSwitch]="so">
+      <li *ngSwitchCase="'Windows'">Windows elegido</li>
+      <li *ngSwitchCase="'Linux'">Linux elegido</li>
+      <li *ngSwitchCase="'Mac'">Mac elegido</li>
+      <li *ngSwitchDefault>Ninguno elegido</li>
+      <input type="text" [(ngModel)]="so">
+    </ul>
+
+    <span [ngStyle]="{'background': color ? color : 'red'}"> Texto</span>
+
+    <div class="btn-group">
+
+    <button class="btn btn-light" (click)="color = 'yellow'" [ngClass] ="{ 'yellow': color == 'yellow'}">1</button>
+    <button class="btn btn-light" (click)="color = 'green'"  [ngClass] ="{ 'green': color == 'green'}">2</button>
+    <button class="btn btn-light" (click)="color = 'cyan'"   [ngClass] ="{ 'cyan': color == 'cyan'}">3</button>
+  </div>
+
+
+  <app-books></app-books>
+
+

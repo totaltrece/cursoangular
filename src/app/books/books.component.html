@@ -1,0 +1,13 @@
+<ul>
+
+    <li *ngFor="let book of books; index as indexBook, first as firstBook, last as lastBook">
+        <span *ngIf="firstBook">First</span>
+        <span *ngIf="lastBook">Last</span>
+        <strong *ngIf="indexBook == 1">bestseller!</strong> <a 
+        
+        (click) = "addBook(book)"
+        [routerLink]="['/information', book.id]" >{{book.title}}</a>
+    </li>
+
+    <p>author: {{authorSelected}}</p>
+</ul>

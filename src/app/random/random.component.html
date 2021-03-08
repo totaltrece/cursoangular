@@ -1,0 +1,12 @@
+<p [ngStyle]="{'background': colorHex()}">{{numrandom}}
+    <br><br>
+    <app-firm [colorNombre] = "colorInRandom"></app-firm>
+</p>
+
+
+<button (click) = "condicion = !condicion">boton</button>
+<ng-template #textoalternativo> ein?</ng-template>
+
+<div *ngIf="condicion; else textoalternativo">
+    <p>lalalalalalalalala</p>
+</div>
